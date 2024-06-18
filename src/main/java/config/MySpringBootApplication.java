@@ -1,4 +1,4 @@
-package toby_springboot;
+package config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @ComponentScan
+@EnableMyAutoConfiguration
 @Configuration
-public @interface MySpringBootAnnotation {
+public @interface MySpringBootApplication {
 }
